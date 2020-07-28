@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Discover Screen Test" thread-count="1" parallel="none"
+	data-provider-thread-count="1">
+
+	<test name="Discover Screen Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenTest" />
+		</classes>
+	</test>
+	<test name="Discover Screen Photo Stream Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenPhotoStreamTest" />
+		</classes>
+	</test>
+<!-- 	<test name="Discover Screen Chat Group Test"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="keanu.Tests.DiscoverScreenChatGroupTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	<test name="Discover Screen Share Sticker Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenShareStickersTest" />
+		</classes>
+	</test>
+	<test name="Discover Screen Check Services Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenCheckServicesTest" />
+		</classes>
+	</test>
+</suite> 

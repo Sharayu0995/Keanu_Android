@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="none" data-provider-thread-count="1" name="Failed suite [Chat Test]">
+  <test parallel="none" name="Chat: Add Friend and Messaging Test(failed)">
+    <classes>
+      <class name="keanu.Tests.ChatCreateEditTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatCreateEditTest -->
+      <class name="keanu.Tests.ChatLeaveAndArchiveTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="setUp"/>
+          <include name="aaasetUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatLeaveAndArchiveTest -->
+      <class name="keanu.Tests.CreateStoryTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setup"/>
+          <include name="handelErrorPopup"/>
+        </methods>
+      </class> <!-- keanu.Tests.CreateStoryTest -->
+      <class name="keanu.Tests.ChatAddFriendMessagingTest">
+        <methods>
+          <include name="sendingMessagesToFriend"/>
+          <include name="quitSession"/>
+          <include name="createChatRoom"/>
+          <include name="userLogin"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatAddFriendMessagingTest -->
+    </classes>
+  </test> <!-- Chat: Add Friend and Messaging Test(failed) -->
+  <test parallel="none" name="Chat: Create and Edit Test(failed)">
+    <classes>
+      <class name="keanu.Tests.ChatCreateEditTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="createChatRoom"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatCreateEditTest -->
+      <class name="keanu.Tests.ChatLeaveAndArchiveTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="setUp"/>
+          <include name="aaasetUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatLeaveAndArchiveTest -->
+      <class name="keanu.Tests.CreateStoryTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setup"/>
+          <include name="handelErrorPopup"/>
+        </methods>
+      </class> <!-- keanu.Tests.CreateStoryTest -->
+      <class name="keanu.Tests.ChatAddFriendMessagingTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatAddFriendMessagingTest -->
+    </classes>
+  </test> <!-- Chat: Create and Edit Test(failed) -->
+  <test parallel="none" name="Chat: Leave And Archive Test(failed)">
+    <classes>
+      <class name="keanu.Tests.ChatLeaveAndArchiveTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="leaveRoomFromGroupInfo"/>
+          <include name="setUp"/>
+          <include name="aaasetUp"/>
+          <include name="DeleteContact"/>
+          <include name="archiveRoomFromGroupInfo"/>
+          <include name="createChatRoom"/>
+          <include name="userLogin"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatLeaveAndArchiveTest -->
+      <class name="keanu.Tests.ChatCreateEditTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatCreateEditTest -->
+      <class name="keanu.Tests.CreateStoryTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="checkAlerts"/>
+          <include name="setup"/>
+          <include name="handelErrorPopup"/>
+        </methods>
+      </class> <!-- keanu.Tests.CreateStoryTest -->
+      <class name="keanu.Tests.ChatAddFriendMessagingTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="aaasetUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- keanu.Tests.ChatAddFriendMessagingTest -->
+    </classes>
+  </test> <!-- Chat: Leave And Archive Test(failed) -->
+</suite> <!-- Failed suite [Chat Test] -->

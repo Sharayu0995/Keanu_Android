@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>TestNG:  MyAccountsTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MyAccountsTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 27 10:44:16 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>142 seconds (142323 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='keanu.Tests.MyAccountsTest.activateDeactivateAccount()'><b>activateDeactivateAccount</b><br>Test class: keanu.Tests.MyAccountsTest<br/>
+<a href="#Output-1121370413" onClick='toggleBox("Output-1121370413", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1121370413" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1121370413">
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+Finding element with logic: xpath:(//android.widget.Switch[@index='1'])[1]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+Finding element with logic: xpath:(//android.widget.Switch[@index='1'])[1]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>keanu.Tests.MyAccountsTest@38c5cc4c</td></tr>
+<tr>
+<td title='keanu.Tests.MyAccountsTest.addAccount()'><b>addAccount</b><br>Test class: keanu.Tests.MyAccountsTest<br/>
+<a href="#Output-449541293" onClick='toggleBox("Output-449541293", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-449541293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-449541293">
+Finding element with logic: id:menu_add_account<br/>
+Finding element with logic: id:btnShowLogin<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='You can use an existing account on any server you would like.']<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.Button[contains(@resource-id,'btnSignIn')]<br/>
+Finding element with logic: xpath://androidx.appcompat.app.ActionBar.Tab[@content-desc='Chats']<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='Keanu | Chats']<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_search<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_sort<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath://androidx.appcompat.app.ActionBar.Tab[@content-desc='Me']/android.widget.ImageView<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='Keanu | Me']<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_search<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_sort<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/edtPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='My Accounts']<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'testuser09')]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>keanu.Tests.MyAccountsTest@38c5cc4c</td></tr>
+<tr>
+<td title='keanu.Tests.MyAccountsTest.defaultAccountChange()'><b>defaultAccountChange</b><br>Test class: keanu.Tests.MyAccountsTest<br/>
+<a href="#Output-34419690" onClick='toggleBox("Output-34419690", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-34419690" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-34419690">
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'testuser08')]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/edtPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='My Accounts']<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'testuser09')]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/edtPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>keanu.Tests.MyAccountsTest@38c5cc4c</td></tr>
+<tr>
+<td title='keanu.Tests.MyAccountsTest.login()'><b>login</b><br>Test class: keanu.Tests.MyAccountsTest<br/>
+<a href="#Output-71843125" onClick='toggleBox("Output-71843125", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-71843125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-71843125">
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'Skip')]<br/>
+Finding element with logic: id:btnShowLogin<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='You can use an existing account on any server you would like.']<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.Button[contains(@resource-id,'btnSignIn')]<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>keanu.Tests.MyAccountsTest@38c5cc4c</td></tr>
+<tr>
+<td title='keanu.Tests.MyAccountsTest.myAcconuts()'><b>myAcconuts</b><br>Test class: keanu.Tests.MyAccountsTest<br/>
+<a href="#Output-493690178" onClick='toggleBox("Output-493690178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-493690178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-493690178">
+Finding element with logic: xpath://androidx.appcompat.app.ActionBar.Tab[@content-desc='Me']/android.widget.ImageView<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='Keanu | Me']<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_search<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/menu_sort<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/edtPass<br/>
+Finding element with logic: id:info.guardianproject.keanuapp:id/btnShowPass<br/>
+Finding element with logic: xpath://android.widget.ImageView[@content-desc='More options']<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='My Accounts']<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'Settings')]<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'Lock the app')]<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'Sign out')]<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='My Accounts']<br/>
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'testuser08')]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[contains(@text,'neo.keanu.im')])[1]<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>keanu.Tests.MyAccountsTest@38c5cc4c</td></tr>
+</table><p>
+</body>
+</html>

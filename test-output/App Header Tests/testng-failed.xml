@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="none" data-provider-thread-count="1" name="Failed suite [App Header Tests]">
+  <test parallel="none" name="Discover Screen Chat Group Test(failed)">
+    <classes>
+      <class name="keanu.Tests.DiscoverScreenChatGroupTest">
+        <methods>
+          <include name="quitSession"/>
+          <include name="setUp"/>
+          <include name="aaasetUp"/>
+          <include name="createChatGroup"/>
+          <include name="checkAlerts"/>
+          <include name="handelErrorPopup"/>
+        </methods>
+      </class> <!-- keanu.Tests.DiscoverScreenChatGroupTest -->
+    </classes>
+  </test> <!-- Discover Screen Chat Group Test(failed) -->
+</suite> <!-- Failed suite [App Header Tests] -->

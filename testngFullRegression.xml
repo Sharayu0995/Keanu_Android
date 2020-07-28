@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="App Header Tests" thread-count="1" parallel="none"
+	data-provider-thread-count="1">
+	
+<test name="AppHeader Swipe Test">
+		<classes>
+			<class name="keanu.Tests.AppHeaderSwipeTest" />
+		</classes>
+	</test>
+	<test name="AppHeader Tapping Test">
+		<classes>
+			<class name="keanu.Tests.AppHeaderTappingTest" />
+		</classes>
+	</test>
+	<test name="AppLock Test">
+		<classes>
+			<class name="keanu.Tests.AppLockTest" />
+		</classes>
+	</test>
+	<test name="Discover Screen Chat Group Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenChatGroupTest" />
+		</classes>
+	</test>
+	<test name="Discover Screen Check Services Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenCheckServicesTest" />
+		</classes>
+	</test>
+
+	<test name="Discover Screen Photo Stream Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenPhotoStreamTest" />
+		</classes>
+	</test>
+
+	<test name="Discover Screen Share Stickers Test">
+		<classes>
+			<class name="keanu.Tests.DiscoverScreenShareStickersTest" />
+		</classes>
+	</test>
+	<test name="MyAccountsTest">
+		<classes>
+			<class name="keanu.Tests.MyAccountsTest" />
+		</classes>
+	</test>
+
+	<test name="MyProfile SignIn Test">
+		<classes>
+			<class name="keanu.Tests.MyProfileSignInTest" />
+		</classes>
+	</test>
+
+	<test name="MyProfile SignUp Test">
+		<classes>
+			<class name="keanu.Tests.MyProfileSignUpTest" />
+		</classes>
+	</test>
+
+<test name="SignInTest">
+		<classes>
+			<class name="keanu.Tests.SignInTest" />
+		</classes>
+	</test>
+
+	<test name="SignUpTest">
+		<classes>
+			<class name="keanu.Tests.SignUpTest" />
+		</classes>
+	</test> 
+	
+
+	
+	</suite> 

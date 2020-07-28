@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chat Test" thread-count="1" parallel="none"
+	data-provider-thread-count="1">
+
+	<test name="Chat: Add Friend and Messaging Test">
+		<classes>
+			<class name="keanu.Tests.ChatAddFriendMessagingTest" />
+		</classes>
+	</test>
+	<test name="Chat: Create and Edit Test">
+		<classes>
+			<class name="keanu.Tests.ChatCreateEditTest" />
+		</classes>
+	</test>
+	<test name="Chat: Leave And Archive Test">
+		<classes>
+			<class name="keanu.Tests.ChatLeaveAndArchiveTest" />
+		</classes>
+	</test>
+	<test name="Chat: Create Story">
+		<classes>
+			<class name="keanu.Tests.CreateStoryTest" />
+		</classes>
+	</test>
+	
+</suite> 

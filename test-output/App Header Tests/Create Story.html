@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>TestNG:  Create Story</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Create Story</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 21 11:41:13 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82449 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='keanu.Tests.CreateStoryTest.CreateStoryTest()'><b>CreateStoryTest</b><br>Test class: keanu.Tests.CreateStoryTest<br/>
+<a href="#Output-194903130" onClick='toggleBox("Output-194903130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194903130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194903130">
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: xpath:(//android.widget.TextView[@index='0'])[3]<br/>
+Finding element with logic: id:btnAttach<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Element not found using locator: id:btnAttach expected [true] but found [false]
+	at keanu.Library.AppLibrary.verifyMobileElement(AppLibrary.java:306)
+	at keanu.Library.AppLibrary.verifyMobileElement(AppLibrary.java:293)
+	at keanu.PageObject.ChatScreen.createStory(ChatScreen.java:321)
+	at keanu.Tests.CreateStoryTest.CreateStoryTest(CreateStoryTest.java:85)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194903130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194903130'><pre>java.lang.AssertionError: Element not found using locator: id:btnAttach expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at keanu.Library.AppLibrary.verifyMobileElement(AppLibrary.java:306)
+	at keanu.Library.AppLibrary.verifyMobileElement(AppLibrary.java:293)
+	at keanu.PageObject.ChatScreen.createStory(ChatScreen.java:321)
+	at keanu.Tests.CreateStoryTest.CreateStoryTest(CreateStoryTest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>keanu.Tests.CreateStoryTest@10db82ae</td></tr>
+<tr>
+<td title='keanu.Tests.CreateStoryTest.login()'><b>login</b><br>Test class: keanu.Tests.CreateStoryTest<br/>
+<a href="#Output-1590481849" onClick='toggleBox("Output-1590481849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1590481849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1590481849">
+Finding element with logic: xpath://android.widget.TextView[contains(@text,'Skip')]<br/>
+Finding element with logic: xpath://android.widget.Button[@resource-id='info.guardianproject.keanuapp:id/btnShowLogin']<br/>
+Finding element with logic: xpath://android.widget.TextView[@text='You can use an existing account on any server you would like.']<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtName')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtPass')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.EditText[contains(@resource-id,'edtServer')]<br/>
+Finding element with logic: xpath://android.widget.Button[contains(@resource-id,'btnSignIn')]<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Appium error: An unknown server-side error occurred while processing the command. Original error: &apos;info.guardianproject.keanuapp&apos; is still running after 500ms timeout (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-V9K624K&apos;, ip: &apos;192.168.43.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: info.guardianproject.keanua..., appPackage: info.guardianproject.keanuapp, appium_port: 38084, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.appiumVersion: 1.14.0, browserstack.appium_version: 1.14.0, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.idleTimeout: 300, browserstack.ie.noFlash: false, browserstack.minOSVersion: 5.0, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, buildName: App Header Tests_Jul211136, bundleID: info.guardianproject.keanuapp, chromeOptions: {w3c: false}, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: oneplus 7t, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: HD1901, deviceName: 53b3c824, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 53b3c824, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: OnePlus 7T-10.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 10.0, os_version: 10.0, pixelRatio: 2.625, platform: ANDROID, platformName: ANDROID, platformVersion: 10, projectName: App Header Tests, proxy_type: node, realMobile: true, sessionName: My Accounts Test, statBarHeight: 80, systemPort: 8204, takesScreenshot: true, udid: 53b3c824, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2126, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ca42975443cb152e4d506c29c0ef054aa9a7d39f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:203)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:187)
+	at keanu.Library.AppLibrary.terminateApp(AppLibrary.java:242)
+	at keanu.PageObject.SignUpSignInScreen.signIn(SignUpSignInScreen.java:60)
+	at keanu.Tests.CreateStoryTest.login(CreateStoryTest.java:77)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590481849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1590481849'><pre>org.openqa.selenium.WebDriverException: Appium error: An unknown server-side error occurred while processing the command. Original error: &apos;info.guardianproject.keanuapp&apos; is still running after 500ms timeout (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-V9K624K&apos;, ip: &apos;192.168.43.117&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, appActivity: info.guardianproject.keanua..., appPackage: info.guardianproject.keanuapp, appium_port: 38084, automationName: uiautomator2, browserstack.appiumLogs: true, browserstack.appiumVersion: 1.14.0, browserstack.appium_version: 1.14.0, browserstack.debug: true, browserstack.deviceLogs: true, browserstack.idleTimeout: 300, browserstack.ie.noFlash: false, browserstack.minOSVersion: 5.0, browserstack.tunnelIdentifier: , browserstack.video: true, browserstack.video.disableWaterMark: false, buildName: App Header Tests_Jul211136, bundleID: info.guardianproject.keanuapp, chromeOptions: {w3c: false}, databaseEnabled: false, detected_language: selenium/3.141.59 (java win..., device: oneplus 7t, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: HD1901, deviceName: 53b3c824, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: 53b3c824, enablePerformanceLogging: false, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: OnePlus 7T-10.0}, nativeWebScreenshot: true, networkConnectionEnabled: true, newCommandTimeout: 0, new_bucketing: true, orientation: PORTRAIT, orig_os: android, osVersion: 10.0, os_version: 10.0, pixelRatio: 2.625, platform: ANDROID, platformName: ANDROID, platformVersion: 10, projectName: App Header Tests, proxy_type: node, realMobile: true, sessionName: My Accounts Test, statBarHeight: 80, systemPort: 8204, takesScreenshot: true, udid: 53b3c824, uiautomator2ServerLaunchTimeout: 60000, version: , viewportRect: {height: 2126, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: ca42975443cb152e4d506c29c0ef054aa9a7d39f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.CommandExecutionHelper.execute(CommandExecutionHelper.java:27)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:203)
+	at io.appium.java_client.InteractsWithApps.terminateApp(InteractsWithApps.java:187)
+	at keanu.Library.AppLibrary.terminateApp(AppLibrary.java:242)
+	at keanu.PageObject.SignUpSignInScreen.signIn(SignUpSignInScreen.java:60)
+	at keanu.Tests.CreateStoryTest.login(CreateStoryTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>keanu.Tests.CreateStoryTest@10db82ae</td></tr>
+</table><p>
+</body>
+</html>
